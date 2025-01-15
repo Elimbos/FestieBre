@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pàgina d'estils CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Pàgina de Javscript -->
+    <script defer src="js/index.js"></script>    
+    <!-- Icona Favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    <!-- Kit d'icones Fontawesome -->
+    <script src="https://kit.fontawesome.com/982ba87c5f.js" crossorigin="anonymous"></script>
+    <!-- Font Nosifer, Bruno Ace SC i Monsterrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nosifer&display=swap" rel="stylesheet">
+
+    <title>Sobre el festival FestieBre</title>
+</head>
+<!-- Grid de l'estructura global -->
+<body class="grid-container"> 
+    <!-- Necessari per a aclarir el fons quan el menú estigui desplegat -->
+    <div class="menu-overlay"></div>
+    <header class="header"> 
+        <!-- Grid del header -->
+        <div class="grid-header">
+            <div class="logo">
+                <!-- Icona Logotip Festiebre -->
+                <a href="index.html"><img class="logo_img" src="/img/isologotip320x180.png" alt="Logotip de Festiebre de Fantasia i Terror Absurd"></a>
+            </div>
+            <div class="site-info">
+                <div class="map">
+                    <button class="button-map">
+                        <span class="text-info">Mapa del lloc</span>
+                        <i class="fa-solid fa-map"></i>
+                    </button>
+                </div>
+                <div class="null"></div>
+                <div class="search">
+                    <input type="text" class="text-info barra-cerca" placeholder="Cerca a fefta.cat...">
+                    <button class="button-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="login">
+                    <button class="button-login">
+                        <span class="text-info">Iniciar sessió</span>
+                        <i class="fa-solid fa-circle-user"></i>
+                    </button>    
+                </div>
+            </div>
+            <!-- Menú navegador -->
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li class="nav-menu_item">
+                        <a href="#" class="nav-menu_link c95BC76 ParVol">Participació<br>Voluntariat</a>
+                        <!-- Submenú Participació Voluntariat -->
+                         <ul class="sub-menu">
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Bases de participació</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Tarifes</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Formulari participació</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Vull ser volunari/a</a>
+                            </li>
+                         </ul>
+                    </li>
+                    <li class="nav-menu_item">
+                        <a href="programacióiagenda.html" class="nav-menu_link cCD9B1F ProAge">Programació<br>Agenda</a>
+                    </li>
+                    <li class="nav-menu_item">
+                        <a href="#" class="nav-menu_link c885C3B EdiAnt">Edicions<br>anteriors</a>
+                        <!-- Submenú Edicions anteriors -->
+                        <ul class="sub-menu">
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Cartellera 2023</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Premis 2023</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Cartellera 2021</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="#" class="sub-menu_link">Premis 2021</a>
+                            </li>
+                         </ul>
+                    </li>
+                    <li class="nav-menu_item">
+                        <a href="#" class="nav-menu_link cBBC4CA EntPas">Entrades<br>Passis</a>
+                    </li>
+                    <li class="nav-menu_item">
+                        <a href="sobreelfestival.html" class="nav-menu_link cB8392B SobFes">Sobre el<br>festival</a>
+                        <!-- Submenú Sobre el festival -->
+                        <ul class="sub-menu">
+                            <li class="sub-menu_item">
+                                <a href="sobreelfestival.html#historia" class="sub-menu_link">Història del festival</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="sobreelfestival.html#conducta" class="sub-menu_link">Codi de conducta</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="sobreelfestival.html#esperit" class="sub-menu_link">Esperit del festival</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="sobreelfestival.html#corpo" class="sub-menu_link">Informació corporativa</a>
+                            </li>
+                            <li class="sub-menu_item">
+                                <a href="sobreelfestival.html#contacte" class="sub-menu_link">Contacteu-nos!</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-menu_item">
+                        <!-- S'ha actualitzat "Notícies" a "Notícies i premsa per a major equilibri visual, al ocupar la resta dues línies generava un desequilibri"-->
+                        <a href="#" class="nav-menu_link c333333 NotPre">Notícies<br>Premsa</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Icona menu hamburguesa-->
+            <div class="burger">
+                <button class="nav-burguer">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>        
+        </div>    
+    </header>
+    <!-- Arbre de la pàgina actual-->
+    <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span> &gt; </span>
+        <a href="sobreelfestival.html">Sobre el festival</a>
+        <span> &gt; </span>
+    </div>
+    <main class="main">
+        <h1>Sobre el festival</h1>
+        <section class="historia">
+            <h2 id="historia" class="correccio">Història de Festiebre</h2>
+            <p>El <strong><em>FestieBre</em> de fantasia i terror absurd</strong> va celebrar la seva primera edició l’any <strong>2021</strong>, com a resposta a la necessitat de donar veu al cinema independent i amateur, alhora que es promocionaven les Terres de l’Ebre a través d’històries plenes de surrealisme i absurd. Amb un estil que barreja fantasia, ciència-ficció i terror, el festival va néixer amb la voluntat d’omplir un buit creatiu en el panorama cultural de la regió.</p>
+            <p>Fundat per <strong>Jordi Miralles</strong>, el festival va tenir una primera edició modesta però ambiciosa, amb una selecció de pel·lícules i activitats que reflectien l’essència del territori i el seu caràcter únic. Malgrat els recursos inicialment limitats, el <em>FestieBre</em> va captar l’atenció per la seva originalitat i per la capacitat de connectar amb un públic divers.</p>
+            <p>Cada dos anys, el <em>FestieBre</em> creix en dimensió i notorietat, mantenint la seva essència itinerant: la seu del festival rota entre les quatre capitals comarcals de les Terres de l’Ebre (<strong>Amposta</strong>, <strong>Tortosa</strong>, <strong>Gandesa</strong> i <strong>Móra d’Ebre</strong>), implicant cada comunitat en la seva organització i dinamització. Aquesta estructura assegura que el festival sigui sempre una experiència fresca i estretament vinculada al territori.</p>
+            <p>Amb un fort suport d’entitats locals i regionals, el <em>FestieBre</em> fomenta també la producció cinematogràfica al territori, oferint recursos i visibilitat a creadors que incorporen elements característics de la zona. La seva identitat visual vibrant i els seus temes sorprenents han aconseguit atreure no només públic local, sinó també cinèfils i professionals del sector d’arreu.</p>
+            <p>El <em>FestieBre</em> no és només un festival de cinema; és una celebració de l’absurd, del territori i de les possibilitats infinites que ofereix el cinema independent. Amb cada edició, continua consolidant-se com una referència ineludible per als amants del cinema més inesperat i original.</p>
+            <br>
+        </section>
+        <section class="conducta">
+            <h2 id="conducta" class="correccio">Codi de conducta</h2>
+            <p>Per garantir que el FestieBre sigui una experiència agradable, inclusiva i segura per a tothom, establim el següent codi de conducta:</p>
+            <ol>
+                <li><strong>Respecte mutu</strong>
+                    <ul>
+                        <li>Tracta tothom amb <strong>respecte</strong>, independentment de la seva opinió, origen, gènere, orientació sexual, religió o capacitats físiques.</li>
+                        <li><strong>Evita</strong> comportaments discriminatoris, ofensius o agressius.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Comunicació inclusiva</strong>
+                    <ul>
+                        <li>Usa un <strong>llenguatge adequat i respectuós</strong> amb tothom, tant en converses com en xarxes socials vinculades al festival.</li>
+                        <li>Està <strong>prohibit</strong> l’ús de comentaris intimidatoris, assetjadors o denigrants.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Entorn segur</strong>
+                    <ul>
+                        <li>No està permès <strong>cap tipus d’assetjament</strong> verbal, físic o visual.</li>
+                        <li><strong>Denuncia</strong> immediatament qualsevol incident al personal del festival.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Consum responsable</strong>
+                    <ul>
+                        <li><strong>Respecta les normes</strong> de consum d’alcohol i substàncies en espais autoritzats.</li>
+                        <li>No es tolera cap comportament que posi en <strong>perill</strong> la seguretat pròpia o dels altres.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Respecte pels espais i el medi ambient</strong>
+                    <ul>
+                        <li><strong>Respecta els espais</strong> del festival, mantenint-los nets i lliures de deixalles.</li>
+                        <li>Fes ús de les papereres i punts de reciclatge disponibles.</li>
+                        <li>Evita qualsevol acció que pugui <strong>danyar el medi ambient</strong> del territori.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Compliment de la normativa</strong>
+                    <ul>
+                        <li>Totes les persones assistents han de <strong>complir les normatives legals vigents</strong>, incloent-hi les relatives a menors d’edat, sorolls i ocupació d’espais.</li>
+                    </ul>
+                </li><br>
+                <li><strong>Actitud proactiva</strong>
+                    <ul>
+                        <li>Participa activament en la creació d’un <strong>entorn positiu i amigable</strong>.</li>
+                        <li>Ajuda els altres i <strong>col·labora</strong> per fer del <em>FestieBre</em> una experiència única.</li>
+                    </ul>
+                </li>
+            </ol>
+            <br>
+        </section>
+        <section class="esperit">
+            <h2 id="esperit" class="correccio">Esperit del festival</h2>
+            <p>El FestieBre és un viatge a través de la foscor i la fantasia, un espai on les històries més inversemblants cobren vida al cor de les <strong>Terres de l’Ebre</strong>. Aquí, l’absurd no busca provocar rialles, sinó descol·locar, inquietar i, sovint, deixar-nos amb la pell de gallina. És un festival que convida a perdre’s entre les ombres d’un Delta que esdevé tan misteriós com captivador, on la realitat i la ficció es barregen fins a esdevenir indistingibles.</p>
+            <p>El terror del FestieBre és cru i visceral. És aquell moment en què el cor et batega més fort perquè el que veus no hauria de ser possible. Però també hi ha espai per a la ciència-ficció que explora l’impossible amb tractors robots i invasions alienígenes, o la fantasia que converteix els canals del Delta en portals a altres mons.</p>
+            <p>Al FestieBre, l’absurd es vesteix de por, i el surrealisme pren forma en cada racó. És una celebració del cinema com a vehicle per traspassar fronteres emocionals i narratives, un punt de trobada per a persones creadores que no temen explorar el desconegut i per a espectadores i espectadors amb ganes de viure l’impossible.</p>
+            <p>Vinguis d’on vinguis, si t’atreveixes a endinsar-te en el misteri i l’imprevist, el FestieBre t’espera amb els braços oberts... i amb una mica de por per a tu.</p>
+            <br>
+        </section>
+        <section class="corpo">
+            <h2 id="corpo" class="correccio">Informació corporativa</h2>
+            <div class="corpo_grid">
+                <div class="corpo_item">
+                    <img src="img/JordiMiralles.png" alt="Imatge de Jordi Miralles, director de FestieBre">
+                    <h3>Jordi Miralles</h3>
+                    <span><strong><em>Director del festival</em></strong></span><br>
+                    <span><em>12 març 1975 (Tortosa)</em></span>
+                    <p>Jordi és l'ànima del FestieBre. Amb més de 20 anys d'experiència en l'organització d'esdeveniments culturals, és conegut per la seva capacitat per combinar la promoció del territori amb iniciatives creatives. La seva passió pel cinema i la seva vinculació amb les Terres de l’Ebre fan que cada edició del festival sigui única.</p>
+                </div>
+                <div class="corpo_item">
+                    <img src="img/MireiaTorres.png" alt="Imatge de Mireia Torres, directora creativa">
+                    <h3>Mireia Torres</h3>
+                    <span><strong><em>Directora creativa</em></strong></span><br>
+                    <span><em>25 octubre 1985 (Amposta)</em></span>
+                    <p>Mireia és l’encarregada de donar forma a la identitat visual del FestieBre. Amb formació en disseny gràfic i una passió pel cinema surrealista, la seva feina assegura que l’essència del festival es reflecteixi en cada detall, des de cartells fins a experiències interactives. La seva energia creativa inspira tot l’equip.</p>
+                </div>
+                <div class="corpo_item">
+                    <img src="img/MarcVidal.png" alt="Imatge de Marc Vidal, responsable de logística">
+                    <h3>Marc Vidal</h3>
+                    <span><strong><em>Responsable de logística</em></strong></span><br>
+                    <span><em>8 juny 1983 (Deltebre)</em></span>
+                    <p>Marc és el cervell darrere de la planificació i la logística del FestieBre. Amb experiència en la gestió d'esdeveniments a l’aire lliure, assegura que tot funcioni com un rellotge, des de la instal·lació d’escenaris fins a la coordinació d’equips. La seva capacitat per anticipar-se als imprevistos és clau per a l’èxit del festival.</p>
+                </div>
+                <div class="corpo_item">
+                    <img src="img/LaiaFerrer.png" alt="Imatge de Laia Ferrer, responsable de comunicació">
+                    <h3>Laia Ferrer</h3>
+                    <span><strong><em>Responsable de comunicació</em></strong></span><br>
+                    <span><em>14 febrer 1992 (El Perelló)</em></span>
+                    <p>La Laia és la veu del FestieBre. Amb un talent innat per explicar històries i una àmplia experiència en relacions públiques, gestiona la presència del festival als mitjans i a les xarxes socials. La seva capacitat de transmetre l’esperit únic del festival és essencial per atreure públic i generar interès.</p>
+                </div>
+                <div class="corpo_item">
+                    <img src="img/PauRibes.png" alt="Imatge de Pau Ribes, coordinador de voluntariat">
+                    <h3>Pau Ribes</h3>
+                    <span><strong><em>Coordinador de voluntariat</em></strong></span><br>
+                    <span><em>3 setembre 1998 (Móra d'Ebre)</em></span>
+                    <p>Pau és l’encarregat d’organitzar i motivar l’equip de voluntaris i voluntàries del FestieBre. Amb una actitud entusiasta i propera, aconsegueix que tothom treballi conjuntament per fer realitat cada edició. La seva energia i compromís són fonamentals per a l’èxit del festival.</p>
+                </div>
+                <div class="corpo_item">
+                    <img src="img/ClaraPuig.png" alt="Imatge de Clara Puig, responsable de xarxes socials">
+                    <h3>Clara Puig</h3>
+                    <span><strong><em>Responsable de xarxes socials</em></strong></span><br>
+                    <span><em>21 novembre 1994 (La Ràpita)</em></span>
+                    <p>Clara és la veu digital del FestieBre. Amb un ull per als detalls visuals i una passió per les històries captivadores, gestiona les xarxes socials del festival, mantenint-ne l’audiència informada i emocionada. La seva creativitat i habilitat per adaptar el to del festival a diferents plataformes són clau per connectar amb un públic divers i fidel.</p>
+                </div>
+                <br>
+            </div>
+        </section>
+        <section class="contacte">
+            <h2 id="contacte" class="correccio">Contacteu amb nosaltres!</h2>
+            <form class="formulari-contacte" action="#" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" class="input-camp" id="email" name="email" placeholder="Escriu el teu email..." required>
+                <br><br>
+
+                <label for="motiu">Motiu de contacte:</label>
+                <input type="text" class="input-camp" id="motiu" name="motiu" placeholder="Motiu del contacte..." required>
+                <br><br>
+
+                <label for="missatge">Missatge:</label>
+                <textarea id="missatge" name="missatge" rows="5" placeholder="Escriu el teu missatge..." required></textarea>
+                <br><br>
+
+                <button type="submit" class="botó-enviar">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="patrocina_txt">Patrocina:</div>
+        <div class="xarxes_txt">Segueix-nos a les xarxes socials:</div>
+        <div class="newsletter_txt">Subscriu-te a la nostra <em>Newsletter</em></div>
+        <div class="patrocina">
+            <div>
+                <a href="https://www.uoc.edu/ca" target="_blank">
+                    <img src="img/Logotipo_UOC.png" class="footer_item" alt="Logotip de la Universitat Oberta de Catalunya">
+                </a>
+            </div>
+            <div>
+                <a href="https://administrem.com/" target="_blank">
+                    <img src="img/administrem.png" class="footer_item" alt="Logotip de l'empresa Administrem">
+                </a>
+            </div>
+            <div>
+                <a href="https://generainnovacio.com/ca/" target="_blank">
+                    <img src="img/logo-generainnovacio.png" class="footer_item" alt="Logotip de l'empresa Genera Innovació">
+                </a>
+            </div>
+
+        </div>
+        <div class="xarxes">
+            <div>
+                <a href=""><img src="img/instagram-icon_logo2.png" class="footer_item" alt="Logotip de la xarxa social Instagram"></a>
+            </div>
+            <div>
+                <a href=""><img src="img/twitter-x_logo2.png" class="footer_item" alt="Logotip de la xarxa social X"></a>
+            </div>
+            <div>
+                <a href=""><img src="img/linkedin-icon_logo2.png" class="footer_item" alt="Logotip de la xarxa social LinkedIn"></a>
+            </div>
+            <div>
+                <a href=""><img src="img/TikTok_logo2.png" class="footer_item" alt="Logotip de la xarxa social TikTok"></a>
+            </div>
+            <div>
+                <a href=""><img src="img/Facebook_logo2.png" class="footer_item" alt="Logotip de la xarxa social Facebook"></a>
+            </div>
+            <div>
+                <a href=""><img src="img/youtube_logo2.png" class="footer_item" alt="Logotip de la pàgina de YouTube"></a>
+            </div>
+        </div>
+        <div class="newsletter">
+            <input type="email" class="footer_item barra-newsletter" placeholder="Escriu el teu email...">
+            <button class="button_nwsltr">
+                Subscriu-te
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
